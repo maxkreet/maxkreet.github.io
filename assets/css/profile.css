@@ -1,0 +1,511 @@
+.logo{
+    width: 15%;
+    margin-left: 5%;
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.cards {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  margin: 7px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+
+.cards:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(165, 120, 69, 0.952);
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Arial Black', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  position: relative;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.container {
+  z-index: 2;
+  position: relative;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile__user > div {
+  width: 40%;
+}
+
+.white-over {
+  padding: 0px 10px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,.05);
+  background: white;
+  display: inline;
+}
+
+.auto {
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #e9e9e9;
+  font-size: 14px;
+  width: 47%;
+}
+
+.auto img {
+  width: 75%;
+  display: block;
+  margin: 10px auto;
+}
+
+.text-opacity {
+  color: #c2c2c2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+}
+.underline:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-5deg);
+}
+
+.c-blue {color: var(--blue);}
+.c-green {color: var(--green);}
+.c-red {color: var(--red);}
+
+main > section {
+  padding: 50px 0px;
+  min-height: 40vh;
+  position: relative;
+}
+.white-overlay:before {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background: rgba(255,255,255,.9);
+}
+
+main > section:nth-child(odd) {
+  background: linear-gradient(115deg, var(--blue) 10%, #e6e6e6 10%);
+}
+
+.list li {
+  position: relative;
+  margin-left: 20px;
+}
+.list li:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  transform: translateY(-50%);
+  background: var(--blue);
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  text-align: center;
+  position: relative;
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(86, 86, 88);
+  margin: 30px auto;
+  overflow: hidden;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0px 5px 20px var(--blue);
+}
+
+.btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 20px;
+  height: 100%;
+  background: rgb(95, 91, 91);
+  box-shadow: 0px 0px 5px rgb(70, 68, 68);
+  transform: skewX(-25deg);
+  animation: blink 3s ease infinite forwards;
+}
+
+.btn--success:hover {
+  color: var(--green)!important;
+}
+.btn--success {
+  box-shadow: 0px 5px 20px var(--green)!important;
+}
+.btn--success:before {
+  background: var(--green)!important;
+}
+
+.btn--danger:hover {
+  color: var(--red)!important;
+}
+.btn--danger {
+  box-shadow: 0px 5px 20px var(--red)!important;
+}
+.btn--danger:before {
+  background: var(--red)!important;
+}
+
+
+.btn--block {
+  display: block;
+}
+
+.btn:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+  z-index: -1;
+}
+.btn:hover {
+  color: var(--blue);
+}
+.btn:hover:before {
+  width: 0%;
+}
+
+.btn--other {
+  margin: 50px auto;
+}
+
+.btn--head {
+  border: none;
+  border-radius: 50px;
+}
+
+/*SECTIONS*/
+.auto-form input,
+.auto-form select,
+.auto-form button {
+  width: 100%;
+}
+
+.auto-form__result,
+.section-news__items > article {
+  width: 49%;
+}
+
+.auto-form > article {
+  width: 100%;
+}
+
+
+
+/*FLEX*/
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-j-center {
+  justify-content: center;
+}
+.flex-a-center {
+  justify-content: center;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-between {
+  justify-content: space-between;
+}
+/*/FLEX*/
+
+@keyframes scaleTo {
+  50% {
+      background: var(--green);
+  }
+  80% {
+      background: white;
+  }
+  to {transform: scale(0); opacity: 0; left: 100%; top: 100%;}
+}
+
+@keyframes scaleFrom {
+  from {
+      transform: scale(0);
+      background: var(--green)!important;
+  }
+
+  to {
+      transform: scale(1);
+      opacity: 1;
+      top: -90%;
+      left: -90%;
+      background: var(--blue);
+  }
+}
+
+@keyframes marker {
+  to{
+      opacity: 0; transform: translate(-50%, -50%) scale(5);}
+}
+
+@keyframes blink {
+  to {
+      left: 150%;
+      transform: skewX(-25deg) scale(5);
+      opacity: 0;
+  }
+}
+
+@keyframes fadeLeft {
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+@keyframes fadeRight {
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes fadeTop {
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@keyframes fadeBottom {
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+.fadeBottom {
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: fadeBottom 3s 1 forwards;
+}
+.fadeTop {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fadeTop 3s 1 forwards;
+}
+.fadeLeft {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeLeft 3s 1 forwards;
+}
+.fadeRight {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeRight 3s 1 forwards;
+}
+.ad1 {animation-duration: 1s;}
+.ad2 {animation-duration: 2s;}
+.ad3 {animation-duration: 3s;}
+
+.preloader {
+  width: 5000px;
+  height: 5000px;
+  z-index: 99999;
+  position: fixed;
+  transition: 2s ease;
+
+  transform: scale(1);
+  opacity: 1;
+  top: -90%;
+  left: -90%;
+
+  border-radius: 50%;
+  background: var(--blue);
+}
+.preloader.run {
+  animation: scaleTo 5s ease 1 forwards;
+}
+.preloader.out {
+  animation: scaleFrom 1.5s ease 1 forwards!important;
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  * {
+      box-sizing: border-box!important;
+  }
+
+  .hamburger {
+      width: 25px;
+      height: 25px;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      display: block;
+  }
+
+  .hamburger.opened {
+      border-top: none;
+      transform: rotate(90deg);
+  }
+
+  .hamburger:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 1.5px;
+      background: #000;
+  }
+
+  h1 {
+      font-size: 30px!important;
+  }
+
+  main > section:nth-child(odd) {
+      background: #e6e6e6!important;
+  }
+
+  h2 {
+      font-size: 20px!important;
+  }
+
+  .section-home > .container > article:nth-child(2) {
+      display: none!important;
+  }
+
+  
+  .auto,
+  .popup-auto__autos > article,
+  .profile__user > div
+  {
+      width: 100%!important;
+  }
+
+  .popup-auto {
+      height: 100vh!important;
+      overflow-y: auto;
+      left: 0!important;
+      top: 0!important;
+  }
+
+  .container {
+      max-width: 500px;
+  }
+
+  .show {
+      transform: scale(1)!important;
+  }
+
+  .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+ 
